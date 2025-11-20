@@ -6,11 +6,13 @@ AnimeKeep is a mobile application for tracking anime, developed as part of the *
 
 ## 🏗 Project Structure (Clean Architecture)
 
+```text
 project-root/
 │
 ├── ui/ → UI components (Screens, ViewModels)
 ├── data/ → API calls (Retrofit) & Repository implementations
 └── domain/ → Data Models & Business Logic (UseCases, Interfaces)
+```
 
 
 ---
@@ -47,6 +49,7 @@ project-root/
 ```bash
 # Example placeholder
 ![Home Screen – Coming Soon](docs/images/placeholder.png)
+```
 
 
 
