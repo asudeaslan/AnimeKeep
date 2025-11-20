@@ -2,7 +2,7 @@ package com.asude.animekeep.domain.repository
 
 import com.asude.animekeep.domain.model.Anime
 
-interface IAnimeRepository {
+interface AnimeRepository {
     suspend fun getTopAnime(): List<Anime>
     suspend fun getUpcomingAnime(): List<Anime>
     suspend fun searchAnime(query: String): List<Anime>
