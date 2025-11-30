@@ -44,14 +44,6 @@ project-root/
 
 ---
 
-## 📷 Screenshots
-⚠️ **Coming Soon** – will be added in future updates.
-```bash
-# Example placeholder
-![Home Screen – Coming Soon](docs/images/placeholder.png)
-```
-
-
 
 👩‍🎓 Student
 
