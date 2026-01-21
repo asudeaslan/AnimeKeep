@@ -1,62 +1,82 @@
-# AnimeKeep 📱
+📱 AnimeKeep
 
-AnimeKeep is a mobile application for tracking anime, developed as part of the **Mobile Application Development** course.
+AnimeKeep is a native Android application developed for tracking anime watching habits. The app is built using Jetpack Compose and follows the MVVM architecture. Anime data is fetched from the Jikan API (MyAnimeList), while user data is securely stored and synchronized using Firebase.
 
----
+This project was developed as part of a Mobile Application Development course.
 
-## 🏗 Project Structure (Clean Architecture)
+🏗️ Project Structure
 
-```text
-project-root/
+The project is organized according to MVVM and clean architecture principles:
+
+com.asude.animekeep/
 │
-├── ui/ → UI components (Screens, ViewModels)
-├── data/ → API calls (Retrofit) & Repository implementations
-└── domain/ → Data Models & Business Logic (UseCases, Interfaces)
-```
+├── data/        # API services and repository layer
+├── model/       # Data classes (Anime, User, etc.)
+└── ui/          # Jetpack Compose screens and ViewModels
+    ├── home/
+    ├── detail/
+    ├── login/
+    ├── mylist/
+    └── profile/
+
+🛠️ Tech Stack
+
+Language: Kotlin
+
+UI: Jetpack Compose (Material Design 3)
+
+Architecture: MVVM
+
+Backend: Firebase Authentication & Cloud Firestore
+
+Networking: Retrofit + Gson (Jikan API v4)
+
+Image Loading: Coil
+
+Concurrency: Coroutines & Flow
+
+Navigation: Navigation Compose
+
+✨ Features
+
+Discover Anime: Search and browse anime using real-time data from the Jikan API
+
+List Management:
+
+Watching
+
+Plan to Watch
+
+Completed
+
+Cloud Sync: User data is stored and synced with Firebase Firestore
+
+Authentication: User registration and login with Firebase Auth
+
+Profile & Statistics: Track progress and view your “Otaku Level” based on completed anime
+
+Dark Mode: Full dark theme support
+
+▶️ How to Run
+
+Clone the repository:
+
+git clone https://github.com/asudeaslan/AnimeKeep.git
 
 
----
+Open the project in Android Studio
 
-## 🚀 Tech Stack
+Sync Gradle files
 
-- **Kotlin**
-- **Retrofit & Gson**
-- **Coroutines**
-- **Clean Architecture**
-- **Jikan API (v4)**
+Run the app on an emulator or a physical device
 
----
+Note: To use Firebase features, you need to add your own google-services.json file.
 
-## 🛠 How to Run
-1. Clone the repository.
-2. Open in **Android Studio**.
-3. Sync Project with Gradle Files.
-4. Run on an Emulator or Physical Device.
-
-## 📌 Features (In Progress)
-
-- 🔍 Search anime using Jikan API
-- 📄 View detailed info
-- 🏗 Clean Architecture (UI / Data / Domain)
-- 🔄 Coroutine-based API calls
-
-> _More features will be added as development progresses._
-
----
-
-## 📷 Screenshots
-⚠️ **Coming Soon** – will be added in future updates.
-```bash
-# Example placeholder
-![Home Screen – Coming Soon](docs/images/placeholder.png)
-```
-
-
-
-👩‍🎓 Student
+👩‍🎓 Developer
 
 Asude Aslan
+West Pomeranian University of Technology
 
 📄 License
 
-This project is for educational purposes only.
+This project was developed for educational purposes only.
